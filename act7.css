@@ -1,0 +1,158 @@
+
+* {
+    font-family: 'Montserrat'; 
+}
+
+body{
+    background-color: #041C32;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    padding:  40px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+    padding: 20px;
+    user-select: none;
+}
+
+video {
+    width: 960px;
+    height: 540px;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1140px;
+    height: 720px;
+    background-color: #064663;
+
+    border-radius: 50px;
+    background: linear-gradient(145deg, #041e36, #04192d);
+    box-shadow:  39px 39px 78px #020e19,
+                -39px -39px 78px #062a4b;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    color: #e1b56b;
+    font-weight: 500;
+    text-align: center;
+}
+
+span {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+.page-reveal {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10;
+  }
+  
+  .page-reveal .element {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-origin: left;
+  }
+  
+  .page-reveal .element-2 {
+    background: #ECB365;
+    transform: scaleX(0);
+    animation: revealAnim 1200ms ease-in;
+    animation-delay: 500ms;
+  }
+  
+  .page-reveal .element-3 {
+    background: #041C32;
+    animation: revealContentAnim forwards;
+    animation-delay: 1000ms;
+  }
+  
+  @keyframes revealAnim {
+    50% {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    51% {
+      transform-origin: right;
+    }
+    100% {
+      transform: scaleX(0);
+      transform-origin: right;
+    }
+  }
+  @keyframes revealContentAnim {
+    to {
+      transform: scale(0);
+    }
+  }
+
+  @media screen and (max-width: 1800px) {
+ 
+  header {
+      padding: 16px 32px;
+  }
+  
+  .logo {
+      width: 64px;
+      padding: 16px;
+  }
+  
+  video {
+      width: 768px;
+      height: 432px;
+      margin-top: 40px;
+  }
+  
+  .wrapper {
+      width: 912px;
+      height: 576px;
+  }
+  
+  
+  }
+
+  iframe {
+    border-radius: 25px;
+  }
+
+  .script-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
+  object{
+    height: 880px;
+    width: 40%;
+    
+  }
